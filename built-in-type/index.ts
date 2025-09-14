@@ -19,3 +19,11 @@ console.log(fullName.split(" "))
 
 console.log(fullName.toUpperCase());
 console.log(fullName.toLowerCase());
+
+
+function display(): void{
+    console.log("Hi I am display");
+    // function nothing return is called void
+    
+}
+display();
