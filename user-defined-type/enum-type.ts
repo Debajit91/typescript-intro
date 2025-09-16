@@ -3,32 +3,32 @@
 // enum types: numeric, string, heterogenous
 
 // numeric enum
-enum requestType {
+enum RequestType {
     readData = 2,
     saveData,  //sequentially it automatically assigns value as 3 if not assigned manually
     deleteData = 3
 }
 
-console.log(requestType);
-console.log(requestType.readData);  // can access constant by dot notation
-console.log(requestType["deleteData"]); //by bracket notation
+console.log(RequestType);
+console.log(RequestType.readData);  // can access constant by dot notation
+console.log(RequestType["deleteData"]); //by bracket notation
 
 
 // string enum
-enum requestType2{
+enum RequestType2{
     readData = "READ_DATA",
     deleteData = "DELETE_DATA"
 }
 
-console.log(requestType2.deleteData);
-console.log(requestType2["readData"]);
+console.log(RequestType2.deleteData);
+console.log(RequestType2["readData"]);
 
 
 // heterogenous enum
-enum requestType3{
+enum RequestType3{
     readData = "READ_DATA",
     deleteData = "DEL_DATA",
     id = 101
 }
-console.log(requestType3.id);
-console.log(requestType3["deleteData"])
+console.log(RequestType3.id);
+console.log(RequestType3["deleteData"])

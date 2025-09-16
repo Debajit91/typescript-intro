@@ -1,29 +1,29 @@
 // enum = stores constants; duplicate value is not allowed here
 // enum types: numeric, string, heterogenous
 // numeric enum
-var requestType;
-(function (requestType) {
-    requestType[requestType["readData"] = 2] = "readData";
-    requestType[requestType["saveData"] = 3] = "saveData";
-    requestType[requestType["deleteData"] = 3] = "deleteData";
-})(requestType || (requestType = {}));
-console.log(requestType);
-console.log(requestType.readData); // can access constant by dot notation
-console.log(requestType["deleteData"]); //by bracket notation
+var RequestType;
+(function (RequestType) {
+    RequestType[RequestType["readData"] = 2] = "readData";
+    RequestType[RequestType["saveData"] = 3] = "saveData";
+    RequestType[RequestType["deleteData"] = 3] = "deleteData";
+})(RequestType || (RequestType = {}));
+console.log(RequestType);
+console.log(RequestType.readData); // can access constant by dot notation
+console.log(RequestType["deleteData"]); //by bracket notation
 // string enum
-var requestType2;
-(function (requestType2) {
-    requestType2["readData"] = "READ_DATA";
-    requestType2["deleteData"] = "DELETE_DATA";
-})(requestType2 || (requestType2 = {}));
-console.log(requestType2.deleteData);
-console.log(requestType2["readData"]);
+var RequestType2;
+(function (RequestType2) {
+    RequestType2["readData"] = "READ_DATA";
+    RequestType2["deleteData"] = "DELETE_DATA";
+})(RequestType2 || (RequestType2 = {}));
+console.log(RequestType2.deleteData);
+console.log(RequestType2["readData"]);
 // heterogenous enum
-var requestType3;
-(function (requestType3) {
-    requestType3["readData"] = "READ_DATA";
-    requestType3["deleteData"] = "DEL_DATA";
-    requestType3[requestType3["id"] = 101] = "id";
-})(requestType3 || (requestType3 = {}));
-console.log(requestType3.id);
-console.log(requestType3["deleteData"]);
+var RequestType3;
+(function (RequestType3) {
+    RequestType3["readData"] = "READ_DATA";
+    RequestType3["deleteData"] = "DEL_DATA";
+    RequestType3[RequestType3["id"] = 101] = "id";
+})(RequestType3 || (RequestType3 = {}));
+console.log(RequestType3.id);
+console.log(RequestType3["deleteData"]);
